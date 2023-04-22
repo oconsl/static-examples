@@ -4,7 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Static Examples</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/htmlTags.css" />
+    <title>Static Examples - HTML Tags</title>
   </head>
-  <body></body>
+  <body>
+    <!-- <div class="navigation">NAVIGATION</div> -->
+    <main class="main-view">
+      <section>
+        <h2 class="section-title">Headings</h2>
+        <h3 class="tag-name"><code>h1</code></h3>
+        <h1 class="headings">Global Learning</h1>
+        <br />
+        <h3 class="tag-name"><code>h2</code></h3>
+        <h2 class="headings">Global Learning</h2>
+        <br />
+        <h3 class="tag-name"><code>h3</code></h3>
+        <h3 class="headings">Global Learning</h3>
+        <br />
+        <h3 class="tag-name"><code>h4</code></h3>
+        <h4 class="headings">Global Learning</h4>
+        <br />
+        <h3 class="tag-name"><code>h5</code></h3>
+        <h5 class="headings">Global Learning</h5>
+        <br />
+        <h3 class="tag-name"><code>h6</code></h3>
+        <h6 class="headings">Global Learning</h6>
+        <br />
+        <hr />
+      </section>
+      <section>
+        <h2 class="section-title">Paragraphs</h2>
+        <h3 class="tag-name"><code>p</code></h3>
+        <p class="paragraph">
+          A paragraph is a series of related sentences developing a central
+          idea, called the topic. Try to think about paragraphs in terms of
+          thematic unity: a paragraph is a sentence or a group of sentences that
+          supports one central, unified idea.
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2 class="section-title">Lists</h2>
+        <p>
+          Lists are used to group related items together. There are two types of
+          lists: ordered lists and unordered lists.
+        </p>
+        <h3 class="section-subtitle">Ordered Lists</h3>
+        <h3 class="tag-name">
+          Many <code>li</code> inside one <code>ol</code>
+        </h3>
+        <ol class="list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <h3 class="section-subtitle">Unordered Lists</h3>
+        <h3 class="tag-name">
+          Many <code>li</code> inside one <code>ul</code>
+        </h3>
+        <ul class="list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <hr />
+      </section>
+      <section>
+        <h2 class="section-title">Links</h2>
+        <h3 class="tag-name">
+          <code>a</code>
+        </h3>
+        <p>
+          <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2 class="section-title">Images</h2>
+        <h3 class="tag-name">
+          <code>img</code>
+        </h3>
+        <p>
+          <img src="/images/cat.jpg" alt="A black cat" height="300" />
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>Forms</h2>
+        <p>
+          Forms are used to collect user input. The <code>form</code> tag is
+          used to define a form. The <code>action</code> attribute is used to
+          define the URL that the form data is sent to. The
+          <code>method</code> attribute is used to define the HTTP method that
+          is used to send the form data. The <code>input</code> tag is used to
+          define an input field. The <code>type</code> attribute is used to
+          define the type of input field. The <code>label</code> tag is used to
+          define a label for an input field. The <code>for</code> attribute is
+          used to define which input field the label is for. The
+          <code>button</code> tag is used to define a button. The
+          <code>type</code> attribute is used to define the type of button. The
+          <code>value</code> attribute is used to define the text that is
+          displayed on the button.
+        </p>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" />
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" />
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+        <hr />
+      </section>
+    </main>
+  </body>
 </html>
