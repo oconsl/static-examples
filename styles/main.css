@@ -2,12 +2,20 @@
 
 :root {
   --accent-color: #38da8c;
+  --accent-color2: #2ecc71;
+  --accent-color3: #27ae60;
   --primary-color: #fedd49;
   --secondary-color: #74e0e6;
   --bg-color: #1c1c27;
   --bg-color2: #464655;
   --bg-color3: #2c2c3a;
   --light-font: #fafafa;
+  --dark-font: #1c1c27;
+  --js-color: #f7df1e;
+  --html-color: #e34c26;
+  --css-color: #2965f1;
+  --gl-color: #112482;
+  --gl-color2: #520798;
 }
 
 *,
@@ -29,14 +37,20 @@
   color: var(--light-font)
 }
 
+
 html,
 body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.5;
   font-family: 'Tajawal', sans-serif;
+  overflow-y: scroll;
 }
 
 code {
@@ -87,11 +101,98 @@ fieldset {
   position: fixed;
 }
 
+.nav-header {
+  margin-top: 1rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(180deg, var(--gl-color), var(--gl-color2));
+  border-bottom: 2px dashed white;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.index-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+.main-nav>a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+}
+
+.index-nav>a {
+  text-decoration: none;
+  color: var(--light-font);
+  height: 25%;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.index-nav #html-option {
+  background-color: var(--html-color);
+}
+
+.index-nav #css-option {
+  background-color: var(--css-color);
+}
+
+.index-nav #js-option {
+  background-color: var(--js-color);
+}
+
+.sub-nav--html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+.sub-nav--html>a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
 .main {
   position: absolute;
   width: 85%;
   background-color: rgb(37, 37, 37);
   margin-left: 15%;
+  min-height: 100vh;
 }
 
 .container {
@@ -101,6 +202,7 @@ fieldset {
   flex-direction: column;
   gap: 0em;
   border-radius: 5px;
+  min-height: calc(100vh - 4em);
 }
 
 .page-title {
@@ -150,4 +252,61 @@ fieldset {
 
 .indent {
   margin-left: 50px;
+}
+
+.sub-nav--html {
+  background-color: var(--html-color);
+}
+
+.sub-nav--css {
+  background-color: var(--css-color);
+}
+
+.sub-nav--js {
+  background-color: var(--js-color);
+}
+
+
+.sub-nav--html>* {
+  color: var(--light-font)
+}
+
+a:has(.gl-logo) {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.gl-logo {
+  object-fit: cover;
+}
+
+.active {
+  background-color: white;
+  color: black;
+  width: 100%;
+  /* padding: 0.3em 0; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent-color3);
 }
