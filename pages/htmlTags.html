@@ -7,14 +7,42 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Static Examples - HTML Tags</title>
   </head>
-
   <body>
-    <aside class="sidebar">NAVIGATION</aside>
+    <nav class="sidebar">
+      <div class="nav-container">
+        <div class="nav-header">
+          <a href="/">
+            <img
+              class="gl-logo"
+              src="/images/GL-logo.png"
+              alt="Global Learning"
+            />
+          </a>
+          <h1 class="nav-title">Global Learning</h1>
+        </div>
+        <div class="sub-nav--html">
+          <a class="nav-link" href="#headings">Headings</a>
+          <a class="nav-link" href="#paragraph">Paragraphs</a>
+          <a class="nav-link" href="#lists">Lists</a>
+          <a class="nav-link" href="#anchors">Links</a>
+          <a class="nav-link" href="#images">Images</a>
+          <a class="nav-link" href="#video">Video</a>
+          <a class="nav-link" href="#audio">Audio</a>
+          <a class="nav-link" href="#inputs">Inputs</a>
+          <a class="nav-link" href="#button">Button</a>
+          <a class="nav-link" href="#details">Details</a>
+          <a class="nav-link" href="#dialog">Dialog</a>
+          <a class="nav-link" href="#meter-progress">Meter & Progress</a>
+          <a class="nav-link" href="#forms">Forms</a>
+          <a class="nav-link" href="#fieldset">Fieldset</a>
+        </div>
+      </div>
+    </nav>
     <main class="main">
       <div class="container">
         <h1 class="page-title">HTML Tags</h1>
         <!-- HEADINGS -->
-        <section class="section">
+        <section class="section" id="headings">
           <h2 class="section-title">Headings</h2>
           <p>
             Headings are used to define the outline and structure of a document.
@@ -46,7 +74,7 @@
           <h6 class="headings">Global Learning</h6>
         </section>
         <!-- PARAGRAPH -->
-        <section class="section">
+        <section class="section" id="paragraph">
           <h2 class="section-title">Paragraphs</h2>
           <p>
             The <code>&lt;p&gt;</code> tag is used to define a paragraph of
@@ -57,7 +85,7 @@
           </p>
         </section>
         <!-- LISTS -->
-        <section class="section">
+        <section class="section" id="lists">
           <h2 class="section-title">
             Unordered List (ul) and Ordered List (ol)
           </h2>
@@ -110,7 +138,7 @@
           </ol>
         </section>
         <!-- ANCHORS -->
-        <section class="section">
+        <section class="section" id="anchors">
           <h2 class="section-title">Anchor</h2>
           <p>
             The <code>&lt;a&gt;</code> tag is used to create hyperlinks, which
@@ -137,7 +165,7 @@
           </ul>
         </section>
         <!-- IMAGES -->
-        <section class="section">
+        <section class="section" id="images">
           <h2 class="section-title">Images</h2>
           <p>
             Images are used to add visual content to a webpage. The
@@ -157,7 +185,7 @@
           </div>
         </section>
         <!-- VIDEO -->
-        <section class="section">
+        <section class="section" id="video">
           <h2 class="section-title">Video</h2>
           <p>
             The <code>&lt;video&gt;</code> tag is used to embed video content in
@@ -171,7 +199,7 @@
           </div>
         </section>
         <!-- AUDIO -->
-        <section class="section">
+        <section class="section" id="audio">
           <h2 class="section-title">Audio</h2>
           <p>
             The <code>&lt;audio&gt;</code> tag is used to embed audio content in
@@ -185,7 +213,7 @@
           </div>
         </section>
         <!-- INPUTS -->
-        <section class="section">
+        <section class="section" id="inputs">
           <h2 class="section-title">Input</h2>
           <p>
             The <code>&lt;input&gt;</code> tag is used to create various form
@@ -322,7 +350,7 @@
           <input type="time" min="09:00" max="17:00" step="900" />
         </section>
         <!-- BUTTON -->
-        <section class="section">
+        <section class="section" id="button">
           <h2 class="section-title">Button</h2>
           <p>
             The <code>&lt;button&gt;</code> tag is used to define a clickable
@@ -358,7 +386,7 @@
           <button type="button" value="Button">Button</button>
         </section>
         <!-- DETAILS -->
-        <section class="section">
+        <section class="section" id="details">
           <h2 class="section-title">Details</h2>
           <p>
             The <code>&lt;details&gt;</code> tag is used to create a widget that
@@ -381,7 +409,7 @@
           </details>
         </section>
         <!-- DIALOG -->
-        <section class="section">
+        <section class="section" id="dialog">
           <h2 class="section-title">Dialog</h2>
           <p>
             The <code>&lt;dialog&gt;</code> tag is used to create a dialog box
@@ -420,9 +448,8 @@
             })
           </script>
         </section>
-
         <!-- METER & PROGRESS -->
-        <section class="section">
+        <section class="section" id="meter-progress">
           <h2 class="section-title">Meter and Progress</h2>
           <p>
             The <code>&lt;meter&gt;</code> tag is used to represent a scalar
@@ -446,7 +473,7 @@
           <progress value="70" max="100">70%</progress>
         </section>
         <!-- FORMS -->
-        <section class="section">
+        <section class="section" id="forms">
           <h2 class="section-title">Forms</h2>
           <p>
             Forms are used to collect user input. The
@@ -473,7 +500,7 @@
           </form>
         </section>
         <!-- FIELDSET -->
-        <section class="section">
+        <section class="section" id="fieldset">
           <h2 class="section-title">Fieldset</h2>
           <p>
             The <code>&lt;fieldset&gt;</code> tag is used to group related
@@ -500,5 +527,6 @@
         </section>
       </div>
     </main>
+    <script src="/scripts/htmlTags.js"></script>
   </body>
 </html>
