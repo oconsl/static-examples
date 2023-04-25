@@ -30,6 +30,7 @@
           <a class="nav-link" href="#video">Video</a>
           <a class="nav-link" href="#audio">Audio</a>
           <a class="nav-link" href="#inputs">Inputs</a>
+          <a class="nav-link" href="#select_option">Select option</a>
           <a class="nav-link" href="#button">Button</a>
           <a class="nav-link" href="#details">Details</a>
           <a class="nav-link" href="#dialog">Dialog</a>
@@ -389,6 +390,26 @@
             that the time value can be changed in.
           </p>
           <input type="time" min="09:00" max="17:00" step="900" />
+        </section>
+        <!-- SELECT OPTION -->
+        <section class="section" id="select_option">
+          <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/select" target="_blank">
+            <h2 class="section-title">Select Option</h2>
+          </a>
+          <p>
+            The <code>&lt;select&gt;</code> tag is used to create a drop-down list of options, also known as a "select" or "combo" box. The <code>&lt;option&gt;</code> tag is used to define each item in the list. The <code>value</code> attribute of the <code>&lt;option&gt;</code> tag is used to specify the value that will be sent to the server if that option is selected. The <code>name</code> attribute of the <code>&lt;select&gt;</code> tag is used to identify the control on the server side.
+          </p>
+          <br />
+          <form>
+            <label for="countries">Choose a country:</label>
+            <select id="countries" name="countries">
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="mexico">México</option>
+              <option value="peru">Perú</option>
+            </select>
+          </form>
         </section>
         <!-- BUTTON -->
         <section class="section" id="button">
