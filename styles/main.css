@@ -36,7 +36,7 @@
   font-size: 20px;
 }
 
-*:not(input, button, textarea, dialog) {
+*:not(input, button, textarea, dialog, select, option) {
   color: var(--light-font)
 }
 
