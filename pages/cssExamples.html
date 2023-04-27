@@ -380,7 +380,8 @@
         </section>
         <!-- BORDER -->
         <section class="section" id="borders">
-          <h3 class="section-subtitle">Borders</h3>
+          <h2 class="section-title">Borders</h2>
+          <h3 class="section-subtitle">Border</h3>
           <p>
             The <code>border</code> property is a shorthand property that allows
             you to set all the properties related to the border of an element at
@@ -464,9 +465,153 @@
           </span>
         </section>
         <!-- MARGIN -->
-        <section class="section" id="margins"></section>
+        <section class="section" id="margins">
+          <h2 class="section-title">Margins</h2>
+          <p>
+            The <code>margin</code> property is used to create space around an
+            element's outside edges. This property can be set to a specific
+            value, such as <code>10px</code>, or to several values to create
+            different margins on each side of an element. You can also use the
+            <code>auto</code> value to center an element horizontally within
+            its parent element.
+          </p>
+          <p>
+            To set a margin to a specific value for all sides of an element, you
+            can use the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              margin: 100px;
+            }
+          </code></pre>
+          <p>
+            This will create a margin of <code>10px</code> around all sides of
+            the <code>&lt;span&gt;</code> element.
+          </p>
+            <div style="border: 2px solid tomato; display: inline-block">
+              <span style="margin: 100px; background-color: lightblue; display: inline-block;">
+                This is an example of an element with a margin of 10px.
+              </span>
+            </div>
+          <p>
+            You can also set different margins for each side of an element using
+            the following syntax:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              margin-top: 10px;
+              margin-right: 60px;
+              margin-bottom: 150px;
+              margin-left: 400px;
+            }
+          </code></pre>
+          <p>
+            This will create a margin of <code>10px</code> on the top of the
+            <code>&lt;span&gt;</code> element, <code>60px</code> on the right,
+            <code>150px</code> on the bottom, and <code>400px</code> on the left.
+          </p>
+          <div style="border: 2px solid tomato; display: inline-block">
+            <span
+              style="
+                margin-top: 10px;
+                margin-right: 60px;
+                margin-bottom: 100px;
+                margin-left: 500px;
+                background-color: lightblue;
+                display: inline-block;
+              "
+            >
+              This is an example of an element with different margins on each side.
+            </span>
+          </div>
+          <p>
+            Additionally, you can use the <code>auto</code> value to center an
+            element horizontally within its parent element. For example, to
+            center a <code>&lt;p&gt;</code> element horizontally, you can use
+            the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            p {
+              width: 30%;
+              margin: 0 auto;
+            }
+          </code></pre>
+          <p>
+            This will center the <code>&lt;p&gt;</code> element horizontally
+            within its parent element.
+          </p>
+          <!-- quiero un div contenedor que dentro tenga un span para mostrar la propiedad margin:0 auto; en el span para que se ubique en el centro del div -->
+          <div style="border: 2px solid tomato; display: block;">
+            <p style="margin: 0 auto; background-color: lightblue; width:30%">
+              This is an example of a centered element
+            </p>
+          </div>
+        </section>
         <!-- PADDING -->
-        <section class="section" id="paddings"></section>
+        <section class="section" id="paddings">
+          <!-- Create the same structure of all sections but now explain the property paddings -->
+          <h2 class="section-title">Paddings</h2>
+          <p>
+            The <code>padding</code> property is used to create space around an
+            element's content. This property can be set to a specific value,
+            such as <code>10px</code>, or to several values to create different
+            paddings on each side of an element.
+          </p>
+          <p>
+            To set a padding to a specific value for all sides of an element,
+            you can use the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              padding: 100px;
+            }
+          </code></pre>
+          <p>
+            This will create a padding of <code>10px</code> around all sides of
+            the <code>&lt;span&gt;</code> element.
+          </p>
+          <div style="border: 2px solid tomato; display: inline-block">
+            <span style="padding: 100px; background-color: lightblue; display: inline-block;">
+              This is an example of an element with a padding of 10px.
+            </span>
+          </div>
+          <p>
+            You can also set different paddings for each side of an element using
+            the following syntax:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              padding-top: 10px;
+              padding-right: 60px;
+              padding-bottom: 150px;
+              padding-left: 400px;
+            }
+          </code></pre>
+          <p>
+            This will create a padding of <code>10px</code> on the top of the
+            <code>&lt;span&gt;</code> element, <code>60px</code> on the right,
+            <code>150px</code> on the bottom, and <code>400px</code> on the left.
+          </p>
+          <div style="border: 2px solid tomato; display: inline-block">
+            <span
+              style="
+                padding-top: 10px;
+                padding-right: 60px;
+                padding-bottom: 100px;
+                padding-left: 500px;
+                background-color: lightblue;
+                display: inline-block;
+              "
+            >
+              This is an example of an element with different paddings on each side.
+            </span>
+          </div>
+        </section>
       </div>
     </main>
     <script src="/scripts/htmlTags.js"></script>
