@@ -1,0 +1,29 @@
+#hover-example {
+  background-color: white;
+  color: black;
+}
+
+#hover-example:hover {
+  background-color: black;
+  color: white;
+}
+
+#active-example {
+  background-color: white;
+  color: black;
+}
+
+#active-example:active {
+  background-color: black;
+  color: white;
+}
+
+#focus-example {
+  background-color: white;
+  color: black;
+}
+
+#focus-example:focus {
+  background-color: black;
+  color: white;
+}
