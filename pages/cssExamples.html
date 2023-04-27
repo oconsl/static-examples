@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon-32x32.png" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/cssExamples.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css"
@@ -32,6 +33,7 @@
           <a class="nav-link" href="#borders">Borders</a>
           <a class="nav-link" href="#margins">Margins</a>
           <a class="nav-link" href="#paddings">Padding</a>
+          <a class="nav-link" href="#pseudo-classes">Pseudo Classes</a>
         </div>
       </div>
     </nav>
@@ -611,6 +613,89 @@
               This is an example of an element with different paddings on each side.
             </span>
           </div>
+        <!-- PSEUDO CLASES -->
+        <section class="section" id="pseudo-classes">
+          <h2 class="section-title">Pseudo classes</h2>
+          <h3 class="section-subtitle">Hover pseudo-class</h3>
+          <p>
+            The <code>:hover</code> pseudo-class is used to apply styles to an
+            element when the user hovers over it with the mouse cursor. This can
+            be useful for providing visual feedback to the user, such as
+            changing the color of a link when it is hovered over.
+          </p>
+          <p>
+            To use the <code>:hover</code> pseudo-class, you simply add it to
+            the end of a CSS selector. For example, the following CSS code will
+            change the background color of all &lt;p&gt; elements to yellow when
+            they are hovered over:
+          </p>
+          <pre>
+          <code class="language-css">
+            a:hover {
+              background-color: black;
+              color: white;
+            }
+          </code></pre>
+          <br />
+          <a href="#null" id="hover-example">
+            This is a link that will change color when hovered over
+          </a>
+          <br /><br />
+          <h3 class="section-subtitle">Active pseudo-class</h3>
+          <p>
+            The <code>:active</code> pseudo-class is used to apply styles to an
+            element while it is being activated by the user, typically when the
+            user clicks on it with the mouse. This can be useful for providing
+            visual feedback to the user, such as changing the color of a button
+            when it is being pressed.
+          </p>
+          <p>
+            To use the <code>:active</code> pseudo-class, you simply add it to
+            the end of a CSS selector. For example, the following CSS code will
+            change the background color of all &lt;button&gt; elements to red
+            while they are being clicked on:
+          </p>
+          <pre>
+          <code class="language-css">
+            button:active {
+              background-color: black;
+              color: white;
+            }
+          </code></pre>
+          <br />
+          <a href="#null" id="active-example">
+            This is a button that will change color when is active
+          </a>
+          <br /><br />
+          <h3 class="section-subtitle">Focus pseudo-class</h3>
+          <p>
+            The <code>:focus</code> pseudo-class is used to apply styles to an
+            element that currently has focus, typically as a result of the user
+            interacting with it using the keyboard or a pointing device such as
+            a mouse or trackpad. This can be useful for providing visual
+            feedback to the user, such as highlighting the currently focused
+            form input or button.
+          </p>
+          <p>
+            To use the <code>:focus</code> pseudo-class, you simply add it to
+            the end of a CSS selector. For example, the following CSS code will
+            change the border color of all &lt;input&gt; elements to blue when
+            they are in focus:
+          </p>
+          <pre>
+          <code class="language-css">
+            input:focus {
+              background-color: black;
+              color: white;
+            }
+          </code></pre>
+          <br />
+          <input
+            type="text"
+            id="focus-example"
+            placeholder="This is an input that will change color when focused"
+            style="width: 600px"
+          />
         </section>
       </div>
     </main>
