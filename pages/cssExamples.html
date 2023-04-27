@@ -379,7 +379,90 @@
           </span>
         </section>
         <!-- BORDER -->
-        <section class="section" id="borders"></section>
+        <section class="section" id="borders">
+          <h3 class="section-subtitle">Borders</h3>
+          <p>
+            The <code>border</code> property is a shorthand property that allows
+            you to set all the properties related to the border of an element at
+            once. This includes the border width, border style, and border
+            color.
+          </p>
+          <p>
+            To set the border width, you can use the <code>border-width</code>
+            property. This property accepts a value or a set of values to
+            specify the width of each side of the border. You can use the values
+            <code>thin</code>, <code>medium</code>, and <code>thick</code> to
+            set predefined widths.
+          </p>
+          <p>
+            To set the border style, you can use the <code>border-style</code>
+            property. This property accepts a value or a set of values to
+            specify the style of each side of the border. You can use the values
+            <code>solid</code>, <code>dashed</code>, <code>dotted</code>,
+            <code>double</code>, <code>groove</code>, <code>ridge</code>,
+            <code>inset</code>, and <code>outset</code> to set predefined
+            styles.
+          </p>
+          <p>
+            To set the border color, you can use the <code>border-color</code>
+            property. This property accepts a value or a set of values to
+            specify the color of each side of the border. You can use any valid
+            CSS color value to set the border color.
+          </p>
+          <p>
+            For example, you can use the following CSS code to set a border with
+            a width of 2 pixels, a solid style, and a red color:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              border: 2px solid tomato;
+            }
+          </code></pre>
+          <span style="border: 2px solid tomato">
+            This is the result of applying a border with a width of 2 pixels, a
+            solid style, and a tomato color to this tag (&lt;span&gt;)
+          </span>
+          <br /><br />
+          <h3 class="section-subtitle">Border radius</h3>
+          <p>
+            The <code>border-radius</code> property allows you to add rounded
+            corners to an element's border. This property accepts one or more
+            values that specify the radius of each corner.
+          </p>
+          <p>
+            You can use the <code>border-radius</code> property to create
+            rounded corners on all four corners of an element by specifying a
+            single value, or you can create different corner styles by
+            specifying up to four values.
+          </p>
+          <p>
+            If you specify one value, it applies to all four corners. If you
+            specify two values, the first value applies to the top-left and
+            bottom-right corners, and the second value applies to the top-right
+            and bottom-left corners. If you specify three values, the first
+            value applies to the top-left corner, the second value applies to
+            the top-right and bottom-left corners, and the third value applies
+            to the bottom-right corner. If you specify four values, each value
+            applies to a separate corner in the following order: top-left,
+            top-right, bottom-right, and bottom-left.
+          </p>
+          <p>
+            For example, you can use the following CSS code to set a border with
+            a radius of 10 pixels on all four corners of an element:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              border: 2px solid tomato;
+              border-radius: 10px;
+            }
+          </code></pre>
+          <span style="border: 2px solid tomato; border-radius: 10px">
+            This is the result of applying a border radius of 10 pixels to all
+            corners of this tag (&lt;span&gt;)
+          </span>
+        </section>
         <!-- MARGIN -->
         <section class="section" id="margins"></section>
         <!-- PADDING -->
