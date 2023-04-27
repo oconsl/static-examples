@@ -118,6 +118,10 @@ section>a {
   border-bottom: 2px dashed white;
 }
 
+.nav-title{
+  text-align: center;
+}
+
 .index-nav {
   display: flex;
   flex-direction: column;
@@ -164,7 +168,7 @@ section>a {
   background-color: var(--js-color-hover);
 }
 
-.sub-nav--html {
+.sub-nav--html, .sub-nav--css, .sub-nav--js {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -172,7 +176,7 @@ section>a {
   height: calc(100vh - 7rem);
 }
 
-.sub-nav--html>a {
+.sub-nav--html>a, .sub-nav--css>a, .sub-nav--js>a {
   text-decoration: none;
   /* transition: all 0.3s ease; */
   width: 100%;
@@ -184,6 +188,14 @@ section>a {
 
 .sub-nav--html>a:is(:hover):not(.active) {
   background-color: var(--html-color-hover);
+}
+
+.sub-nav--css>a:is(:hover):not(.active) {
+  background-color: var(--css-color-hover);
+}
+
+.sub-nav--js>a:is(:hover):not(.active) {
+  background-color: var(--js-color-hover);
 }
 
 .hidden {
@@ -270,7 +282,7 @@ section>a {
 }
 
 
-.sub-nav--html>* {
+.sub-nav--html>*, .sub-nav--css>*, .sub-nav--js>* {
   color: var(--light-font)
 }
 
@@ -356,11 +368,11 @@ a:has(.gl-logo) {
     font-size: 1rem;
   }
 
-  .sub-nav--html {
+  .sub-nav--html, .sub-nav--css, .sub-nav--js {
     height: calc(100vh - 5rem);
   }
 
-  .sub-nav--html>a {
+  .sub-nav--html>a, .sub-nav--css>a, .sub-nav--js>a {
     font-size: 0.7rem;
   }
 
