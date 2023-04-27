@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
+  <title>Static Examples - CSS</title>
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="nav-container">
+      <div class="nav-header">
+        <a href="/">
+          <img class="gl-logo" src="/images/GL-logo.png" alt="Global Learning" />
+        </a>
+        <h1 class="nav-title">Global Learning</h1>
+      </div>
+      <div class="sub-nav--css">
+        <a class="nav-link" href="#fonts">Fonts</a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">CSS Examples</h1>
+      <!-- FONTS -->
+      <section class="section" id="fonts">
+        <h2 class="section-title">Font properties</h2>
+        <h3 class="section-subtitle">Font size</h3>
+        <p>
+          The <code>font-size</code> property is used to set the size of text in HTML. It accepts various units, such as
+          pixels (px), ems (em), and percentages (%), among others.
+        </p>
+        <p>
+          For example, you can set the font size of an element to 40 pixels using the following CSS code:
+        </p>
+        <pre>
+            <code class="language-css">
+              span {
+                font-size: 40px;
+              }
+            </code></pre>
+        <span style="font-size:40px">This is the result of applying font-size of 40px to this tag (&lt;span&gt;)</span>
+        <br />
+        <br />
+        <h3 class="section-subtitle">Font color</h3>
+        <p>
+          The <code>color</code> property is used to set the color of text in HTML. It accepts various types of
+          representation of colors such as
+          rgb, rgba, hsl and hexadecimal.
+        </p>
+        <p>
+          For example, you can set the colo of the font to coral using the following CSS code:
+        </p>
+        <pre>
+          <code class="language-css">
+            span {
+              color: coral;
+            }
+          </code></pre>
+        <span style="color: coral;">This is the result of applying coral color to this tag
+          (&lt;span&gt;)</span>
+        <br />
+        <br />
+        <h3 class="section-subtitle">Font weight</h3>
+        <p>
+          The <code>font-weight</code> property is used to set the thickness or boldness of text in HTML. It accepts
+          various
+          values, such as normal, bold, bolder, and lighter, among others.
+        </p>
+        <p>
+          For example, you can set the font weight of an element to bold using the following CSS code:
+        </p>
+        <pre>
+          <code class="language-css">
+            span {
+              font-weight: bold;
+            }
+          </code></pre>
+        <span style="font-weight: bold;">This is the result of applying font-weight of bold to this tag
+          (&lt;span&gt;)</span>
+        <br />
+        <br />
+        <h3 class="section-subtitle">Font family</h3>
+        <p>
+          The <code>font-family</code> property is used to set the font face or typeface of text in HTML. It accepts
+          various
+          values, such as sans-serif, serif, monospace, and cursive, among others.
+        </p>
+        <p>
+          For example, you can set the font family of an element to Arial using the following CSS code:
+        </p>
+        <pre>
+          <code class="language-css">
+            span {
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+          </code></pre>
+        <span
+          style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">This
+          is the result of applying font-family of Arial to this tag
+          (&lt;span&gt;)</span>
+        <br /><br />
+
+        <h3 class="section-subtitle">Text transform</h3>
+        <p>
+          The <code>text-transform</code> property is used to transform the case of text in HTML. It accepts various
+          values such
+          as <code>capitalize</code>, <code>uppercase</code>, and <code>lowercase</code>, among others.
+        </p>
+        <p>
+          For example, you can set the text to uppercase using the following CSS code:
+        </p>
+        <pre>
+          <code class="language-css">
+            span {
+              text-transform: uppercase;
+            }
+          </code></pre>
+        <span style="text-transform:uppercase">This is the result of applying uppercase text transform to this tag
+          (&lt;span&gt;)</span>
+        <br /><br />
+        <h3 class="section-subtitle">Text shadow</h3>
+        <p>
+          The <code>text-shadow</code> property is used to add a shadow effect to the text in HTML. It accepts values
+          for horizontal and vertical offsets, blur radius, and color.
+        </p>
+        <p>
+          For example, you can add a shadow effect to the text in an element using the following CSS code:
+        </p>
+        <pre>
+      <code class="language-css">
+        span {
+          text-shadow: 3px 3px 1px #32b9e7;
+        }
+      </code></pre>
+        <span style="text-shadow: 3px 3px 1px #32b9e7;">This is the result of applying text shadow to this tag
+          (&lt;span&gt;)</span>
+      </section>
+
+    </div>
+  </main>
+  <script src="/scripts/htmlTags.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>
