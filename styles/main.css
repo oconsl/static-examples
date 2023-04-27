@@ -12,11 +12,11 @@
   --light-font: #fafafa;
   --dark-font: #1c1c27;
   --js-color: #f7df1e;
-  --js-color-hover: #f0db4f;
+  --js-color-hover: #f9e64f;
   --html-color: #e34c26;
   --html-color-hover: #f16529;
   --css-color: #2965f1;
-  --css-color-hover: #1a4cff;
+  --css-color-hover: #3581f1;
   --gl-color: #112482;
   --gl-color2: #520798;
 }
@@ -118,7 +118,7 @@ section>a {
   border-bottom: 2px dashed white;
 }
 
-.nav-title{
+.nav-title {
   text-align: center;
 }
 
@@ -168,7 +168,9 @@ section>a {
   background-color: var(--js-color-hover);
 }
 
-.sub-nav--html, .sub-nav--css, .sub-nav--js {
+.sub-nav--html,
+.sub-nav--css,
+.sub-nav--js {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -176,9 +178,13 @@ section>a {
   height: calc(100vh - 7rem);
 }
 
-.sub-nav--html>a, .sub-nav--css>a, .sub-nav--js>a {
+.sub-nav--html>a,
+.sub-nav--css>a,
+.sub-nav--js>a {
   text-decoration: none;
   /* transition: all 0.3s ease; */
+  flex: 1;
+  max-height: 100px;
   width: 100%;
   display: grid;
   place-items: center;
@@ -282,7 +288,9 @@ section>a {
 }
 
 
-.sub-nav--html>*, .sub-nav--css>*, .sub-nav--js>* {
+.sub-nav--html>*,
+.sub-nav--css>*,
+.sub-nav--js>* {
   color: var(--light-font)
 }
 
@@ -368,11 +376,15 @@ a:has(.gl-logo) {
     font-size: 1rem;
   }
 
-  .sub-nav--html, .sub-nav--css, .sub-nav--js {
+  .sub-nav--html,
+  .sub-nav--css,
+  .sub-nav--js {
     height: calc(100vh - 5rem);
   }
 
-  .sub-nav--html>a, .sub-nav--css>a, .sub-nav--js>a {
+  .sub-nav--html>a,
+  .sub-nav--css>a,
+  .sub-nav--js>a {
     font-size: 0.7rem;
   }
 

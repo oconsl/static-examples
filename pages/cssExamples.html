@@ -1,154 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css"
+    />
+    <title>Static Examples - CSS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/images/favicon-32x32.png" />
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
-  <title>Static Examples - CSS</title>
-</head>
-
-<body>
-  <nav class="sidebar">
-    <div class="nav-container">
-      <div class="nav-header">
-        <a href="/">
-          <img class="gl-logo" src="/images/GL-logo.png" alt="Global Learning" />
-        </a>
-        <h1 class="nav-title">Global Learning</h1>
+  <body>
+    <nav class="sidebar">
+      <div class="nav-container">
+        <div class="nav-header">
+          <a href="/">
+            <img
+              class="gl-logo"
+              src="/images/GL-logo.png"
+              alt="Global Learning"
+            />
+          </a>
+          <h1 class="nav-title">Global Learning</h1>
+        </div>
+        <div class="sub-nav--css">
+          <a class="nav-link" href="#fonts">Fonts</a>
+          <a class="nav-link" href="#backgrounds">Backgrounds</a>
+          <a class="nav-link" href="#borders">Borders</a>
+          <a class="nav-link" href="#margins">Margins</a>
+          <a class="nav-link" href="#paddings">Padding</a>
+        </div>
       </div>
-      <div class="sub-nav--css">
-        <a class="nav-link" href="#fonts">Fonts</a>
-      </div>
-    </div>
-  </nav>
-  <main class="main">
-    <div class="container">
-      <h1 class="page-title">CSS Examples</h1>
-      <!-- FONTS -->
-      <section class="section" id="fonts">
-        <h2 class="section-title">Font properties</h2>
-        <h3 class="section-subtitle">Font size</h3>
-        <p>
-          The <code>font-size</code> property is used to set the size of text in HTML. It accepts various units, such as
-          pixels (px), ems (em), and percentages (%), among others.
-        </p>
-        <p>
-          For example, you can set the font size of an element to 40 pixels using the following CSS code:
-        </p>
-        <pre>
-            <code class="language-css">
-              span {
-                font-size: 40px;
-              }
-            </code></pre>
-        <span style="font-size:40px">This is the result of applying font-size of 40px to this tag (&lt;span&gt;)</span>
-        <br />
-        <br />
-        <h3 class="section-subtitle">Font color</h3>
-        <p>
-          The <code>color</code> property is used to set the color of text in HTML. It accepts various types of
-          representation of colors such as
-          rgb, rgba, hsl and hexadecimal.
-        </p>
-        <p>
-          For example, you can set the colo of the font to coral using the following CSS code:
-        </p>
-        <pre>
+    </nav>
+    <main class="main">
+      <div class="container">
+        <h1 class="page-title">CSS Examples</h1>
+        <!-- FONTS -->
+        <section class="section" id="fonts">
+          <h2 class="section-title">Font properties</h2>
+          <h3 class="section-subtitle">Font size</h3>
+          <p>
+            The <code>font-size</code> property is used to set the size of text
+            in HTML. It accepts various units, such as pixels (px), ems (em),
+            and percentages (%), among others.
+          </p>
+          <p>
+            For example, you can set the font size of an element to 40 pixels
+            using the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              font-size: 40px;
+            }
+          </code></pre>
+          <span style="font-size: 40px"
+            >This is the result of applying font-size of 40px to this tag
+            (&lt;span&gt;)</span
+          >
+          <br />
+          <br />
+          <h3 class="section-subtitle">Font color</h3>
+          <p>
+            The <code>color</code> property is used to set the color of text in
+            HTML. It accepts various types of representation of colors such as
+            rgb, rgba, hsl and hexadecimal.
+          </p>
+          <p>
+            For example, you can set the colo of the font to coral using the
+            following CSS code:
+          </p>
+          <pre>
           <code class="language-css">
             span {
               color: coral;
             }
           </code></pre>
-        <span style="color: coral;">This is the result of applying coral color to this tag
-          (&lt;span&gt;)</span>
-        <br />
-        <br />
-        <h3 class="section-subtitle">Font weight</h3>
-        <p>
-          The <code>font-weight</code> property is used to set the thickness or boldness of text in HTML. It accepts
-          various
-          values, such as normal, bold, bolder, and lighter, among others.
-        </p>
-        <p>
-          For example, you can set the font weight of an element to bold using the following CSS code:
-        </p>
-        <pre>
+          <span style="color: coral"
+            >This is the result of applying coral color to this tag
+            (&lt;span&gt;)</span
+          >
+          <br />
+          <br />
+          <h3 class="section-subtitle">Font weight</h3>
+          <p>
+            The <code>font-weight</code> property is used to set the thickness
+            or boldness of text in HTML. It accepts various values, such as
+            normal, bold, bolder, and lighter, among others.
+          </p>
+          <p>
+            For example, you can set the font weight of an element to bold using
+            the following CSS code:
+          </p>
+          <pre>
           <code class="language-css">
             span {
               font-weight: bold;
             }
           </code></pre>
-        <span style="font-weight: bold;">This is the result of applying font-weight of bold to this tag
-          (&lt;span&gt;)</span>
-        <br />
-        <br />
-        <h3 class="section-subtitle">Font family</h3>
-        <p>
-          The <code>font-family</code> property is used to set the font face or typeface of text in HTML. It accepts
-          various
-          values, such as sans-serif, serif, monospace, and cursive, among others.
-        </p>
-        <p>
-          For example, you can set the font family of an element to Arial using the following CSS code:
-        </p>
-        <pre>
+          <span style="font-weight: bold"
+            >This is the result of applying font-weight of bold to this tag
+            (&lt;span&gt;)</span
+          >
+          <br />
+          <br />
+          <h3 class="section-subtitle">Font family</h3>
+          <p>
+            The <code>font-family</code> property is used to set the font face
+            or typeface of text in HTML. It accepts various values, such as
+            sans-serif, serif, monospace, and cursive, among others.
+          </p>
+          <p>
+            For example, you can set the font family of an element to Arial
+            using the following CSS code:
+          </p>
+          <pre>
           <code class="language-css">
             span {
               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
           </code></pre>
-        <span
-          style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">This
-          is the result of applying font-family of Arial to this tag
-          (&lt;span&gt;)</span>
-        <br /><br />
+          <span
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+            >This is the result of applying font-family of Arial to this tag
+            (&lt;span&gt;)</span
+          >
+          <br /><br />
 
-        <h3 class="section-subtitle">Text transform</h3>
-        <p>
-          The <code>text-transform</code> property is used to transform the case of text in HTML. It accepts various
-          values such
-          as <code>capitalize</code>, <code>uppercase</code>, and <code>lowercase</code>, among others.
-        </p>
-        <p>
-          For example, you can set the text to uppercase using the following CSS code:
-        </p>
-        <pre>
+          <h3 class="section-subtitle">Text transform</h3>
+          <p>
+            The <code>text-transform</code> property is used to transform the
+            case of text in HTML. It accepts various values such as
+            <code>capitalize</code>, <code>uppercase</code>, and
+            <code>lowercase</code>, among others.
+          </p>
+          <p>
+            For example, you can set the text to uppercase using the following
+            CSS code:
+          </p>
+          <pre>
           <code class="language-css">
             span {
               text-transform: uppercase;
             }
           </code></pre>
-        <span style="text-transform:uppercase">This is the result of applying uppercase text transform to this tag
-          (&lt;span&gt;)</span>
-        <br /><br />
-        <h3 class="section-subtitle">Text shadow</h3>
-        <p>
-          The <code>text-shadow</code> property is used to add a shadow effect to the text in HTML. It accepts values
-          for horizontal and vertical offsets, blur radius, and color.
-        </p>
-        <p>
-          For example, you can add a shadow effect to the text in an element using the following CSS code:
-        </p>
-        <pre>
-      <code class="language-css">
-        span {
-          text-shadow: 3px 3px 1px #32b9e7;
-        }
-      </code></pre>
-        <span style="text-shadow: 3px 3px 1px #32b9e7;">This is the result of applying text shadow to this tag
-          (&lt;span&gt;)</span>
-      </section>
-
-    </div>
-  </main>
-  <script src="/scripts/htmlTags.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-</body>
-
+          <span style="text-transform: uppercase"
+            >This is the result of applying uppercase text transform to this tag
+            (&lt;span&gt;)</span
+          >
+          <br /><br />
+          <h3 class="section-subtitle">Text shadow</h3>
+          <p>
+            The <code>text-shadow</code> property is used to add a shadow effect
+            to the text in HTML. It accepts values for horizontal and vertical
+            offsets, blur radius, and color.
+          </p>
+          <p>
+            For example, you can add a shadow effect to the text in an element
+            using the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              text-shadow: 3px 3px 1px #32b9e7;
+            }
+          </code></pre>
+          <span style="text-shadow: 3px 3px 1px #32b9e7"
+            >This is the result of applying text shadow to this tag
+            (&lt;span&gt;)</span
+          >
+        </section>
+        <!-- BACKGROUND -->
+        <section class="section" id="backgrounds">
+          <h2 class="section-title">Background properties</h2>
+          <h3 class="section-subtitle">Background color</h3>
+          <p>
+            The <code>background-color</code> property is used to set the
+            background color of an element in HTML. It accepts various types of
+            representation of colors such as rgb, rgba, hsl and hexadecimal.
+          </p>
+          <p>
+            For example, you can set the background color of an element to coral
+            using the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              background-color: coral;
+            }
+          </code></pre>
+          <span style="background-color: coral"
+            >This is the result of applying background-color of coral to this
+            tag (&lt;span&gt;)</span
+          >
+          <br /><br />
+          <h3 class="section-subtitle">Background image</h3>
+          <p>
+            The <code>background-image</code> property is used to set the
+            background image of an element in HTML. It accepts values for image
+            url, position, repeat, and size.
+          </p>
+          <p>
+            For example, you can set the background image of an element to an
+            image using the following CSS code:
+          </p>
+          <pre>
+          <code class="language-css">
+            p {
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-size: contain;
+              height: 100px;
+            }
+          </code></pre>
+          <p
+            style="
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-size: contain;
+              height: 100px;
+            "
+          >
+            This is the result of applying background-image of an image to this
+            tag (&lt;p&gt;)
+          </p>
+          <br /><br />
+          <h3 class="section-subtitle">Background repeat</h3>
+          <p>
+            The <code>background-repeat</code> property is used to control the
+            repeating behavior of a background image. By default, a background
+            image will repeat both horizontally and vertically to fill the
+            entire background area of an element. However, you can use this
+            property to change this behavior.
+          </p>
+          <p>The possible values for this property are:</p>
+          <ul class="indent">
+            <li>
+              <code>repeat</code>: The background image will repeat both
+              horizontally and vertically. This is the default value.
+            </li>
+            <li>
+              <code>repeat-x</code>: The background image will repeat only
+              horizontally.
+            </li>
+            <li>
+              <code>repeat-y</code>: The background image will repeat only
+              vertically.
+            </li>
+            <li>
+              <code>no-repeat</code>: The background image will not repeat.
+            </li>
+          </ul>
+          <p>
+            For example, you can use the following CSS code to set a background
+            image to repeat only horizontally:
+          </p>
+          <pre>
+          <code class="language-css">
+            p {
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 100px;
+            }
+          </code></pre>
+          <p
+            style="
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 100px;
+            "
+          >
+            This is the result of applying background-repeat no-repeat to this
+            tag (&lt;p&gt;)
+          </p>
+          <br /><br />
+          <h3 class="section-subtitle">Background position</h3>
+          <p>
+            The <code>background-position</code> property is used to control the
+            position of a background image. By default, the background image is
+            positioned at the top-left corner of an element, but you can use
+            this property to change its position.
+          </p>
+          <p>The property accepts two values:</p>
+          <ul class="indent">
+            <li>
+              The first value represents the horizontal position, and can be any
+              of the following:
+              <ul class="indent">
+                <li><code>left</code></li>
+                <li><code>center</code></li>
+                <li><code>right</code></li>
+                <li>A length value, such as <code>10px</code></li>
+                <li>A percentage value, such as <code>50%</code></li>
+              </ul>
+            </li>
+            <li>
+              The second value represents the vertical position, and can be any
+              of the following:
+              <ul class="indent">
+                <li><code>top</code></li>
+                <li><code>center</code></li>
+                <li><code>bottom</code></li>
+                <li>A length value, such as <code>10px</code></li>
+                <li>A percentage value, such as <code>50%</code></li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            For example, you can use the following CSS code to set a background
+            image and position it at the bottom-right corner of an element:
+          </p>
+          <pre>
+          <code class="language-css">
+            p {
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 100px;
+            }
+          </code></pre>
+          <p
+            style="
+              background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/10/gato-negro.jpg');
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 100px;
+            "
+          >
+            This is the result of applying background-position center center to
+            this tag (&lt;p&gt;)
+          </p>
+          <br /><br />
+          <h3 class="section-subtitle">Background with gradient</h3>
+          <p>
+            The <code>background</code> property is a shorthand property that
+            allows you to set all the background properties at once. This
+            includes the background color, background image, and background
+            position, as well as other properties such as background-clip,
+            background-origin, and background-size. In addition, you can use the
+            property to set a gradient background.
+          </p>
+          <p>
+            To set a gradient background, you can use the
+            <code>linear-gradient()</code> function. This function accepts two
+            or more color stops, which define the color transitions in the
+            gradient. You can also specify the direction of the gradient using
+            keywords such as <code>to top</code> or
+            <code>to bottom right</code> or by specifying an angle such as
+            <code>45deg</code>.
+          </p>
+          <p>
+            For example, you can use the following CSS code to set a background
+            with a linear gradient:
+          </p>
+          <pre>
+          <code class="language-css">
+            span {
+              background: linear-gradient(90deg, #ff0000, #0000ff);
+            }
+          </code></pre>
+          <p>
+            This will create a gradient that transitions from coral to
+            rebeccapurple in a direction of 90 degrees.
+          </p>
+          <span
+            style="background: linear-gradient(90deg, coral, rebeccapurple)"
+          >
+            This is the result of applying background linear gradient to this
+            tag (&lt;span&gt;)
+          </span>
+        </section>
+        <!-- BORDER -->
+        <section class="section" id="borders"></section>
+        <!-- MARGIN -->
+        <section class="section" id="margins"></section>
+        <!-- PADDING -->
+        <section class="section" id="paddings"></section>
+      </div>
+    </main>
+    <script src="/scripts/htmlTags.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+  </body>
 </html>
