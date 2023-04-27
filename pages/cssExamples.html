@@ -34,6 +34,7 @@
           <a class="nav-link" href="#margins">Margins</a>
           <a class="nav-link" href="#paddings">Padding</a>
           <a class="nav-link" href="#pseudo-classes">Pseudo Classes</a>
+          <a class="nav-link" href="#pseudo-elements">Pseudo Elements</a>
         </div>
       </div>
     </nav>
@@ -519,9 +520,9 @@
             }
           </code></pre>
           <br />
-          <a href="#null" id="active-example">
+          <button href="#null" id="active-example">
             This is a button that will change color when is active
-          </a>
+          </button>
           <br /><br />
           <h3 class="section-subtitle">Focus pseudo-class</h3>
           <p>
@@ -552,6 +553,53 @@
             placeholder="This is an input that will change color when focused"
             style="width: 600px"
           />
+        </section>
+        <!-- PSEUDO ELEMENTS -->
+        <section class="section" id="pseudo-elements">
+          <h2 class="section-title">Pseudo elements</h2>
+          <!-- Create the same structure for before pseudo class -->
+          <h3 class="section-subtitle">Before pseudo-element</h3>
+          <p>
+            The <code>::before</code> pseudo-element is used to insert content
+            before the content of an element. This can be useful for adding
+            decorative content to an element, such as a border or a background
+            image.
+          </p>
+          <p>
+            To use the <code>::before</code> pseudo-element, you simply add it
+            to the end of a CSS selector. For example, the following CSS code
+            will insert an emoji before &lt;span&gt; element:
+          </p>
+          <pre>
+          <code class="language-css">
+            span::before {
+              content: "😲 ";
+            }
+          </code></pre>
+          <br />
+          <span id="before-example">This is a span with an emoji before</span>
+          <br /><br />
+          <!-- Create the same structure for after pseudo class -->
+          <h3 class="section-subtitle">After pseudo-element</h3>
+          <p>
+            The <code>::after</code> pseudo-element is used to insert content
+            after the content of an element. This can be useful for adding
+            decorative content to an element, such as a border or a background
+            image.
+          </p>
+          <p>
+            To use the <code>::after</code> pseudo-element, you simply add it to
+            the end of a CSS selector. For example, the following CSS code will
+            insert an emoji after &lt;span&gt; element:
+          </p>
+          <pre>
+          <code class="language-css">
+            span::after {
+              content: " 😎";
+            }
+          </code></pre>
+          <br />
+          <span id="after-example">This is a span with an emoji after</span>
         </section>
       </div>
     </main>

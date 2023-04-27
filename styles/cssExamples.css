@@ -27,3 +27,11 @@
   background-color: black;
   color: white;
 }
+
+#before-example::before {
+  content: "😲 ";
+}
+
+#after-example::after {
+  content: " 😎";
+}
